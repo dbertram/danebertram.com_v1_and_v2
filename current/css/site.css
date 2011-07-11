@@ -1,0 +1,179 @@
+body, html {
+  margin: 0;
+  padding: 0;
+}
+a {
+  color: #999;
+  text-decoration: none;
+}
+a:hover {
+  color: #000;
+}
+a[href$='.pdf'] {
+  background: transparent url(http://danebertram.com/img/icon_pdf.png) no-repeat center right;
+  padding: 5px 25px 5px 0px;
+}
+a[rel='author'] {
+  background: transparent url(http://danebertram.com/img/icon_email.png) no-repeat center right;
+  padding: 5px 20px 5px 0px;
+}
+ul {
+  margin-left: 1.8em;
+  list-style: circle;
+}
+ul li {
+  line-height: 1.2em;
+}
+dl {
+  margin-left: 0.7em;
+}
+dl dd {
+  margin-left: 1em;
+}
+article {
+  position: relative;
+  font-family: Tahoma, Geneva, Verdana, sans-serif;
+  font-size: smaller;
+  min-width: 600px;
+  max-width: 780px;
+  margin: auto;
+}
+header {
+  border: 1px solid #cccccc;
+  -moz-box-shadow: 2px 2px 10px #999999;
+  -webkit-box-shadow: 2px 2px 10px #999999;
+  box-shadow: 2px 2px 10px #999999;
+  position: relative;
+  height: 110px;
+  padding: 0px 15px;
+  margin: 15px 15px 0;
+  background-color: #fff;
+  background-image: url(http://danebertram.com/img/h-barcelona-2018.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+header #logo {
+  position: absolute;
+  top: 23px;
+}
+header h1 {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 0px 0px 5px #fff;
+  padding: 5px;
+}
+header h1:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: #fff;
+  opacity: 0.3;
+  border-radius: 4px;
+}
+header aside {
+  position: absolute;
+  right: 0;
+  top: 3px;
+}
+header aside a {
+  float: right;
+  margin-right: 2px;
+  line-height: normal;
+  opacity: 0.5;
+  -webkit-transition: opacity 0.1s ease-in-out;
+  -moz-transition: opacity 0.1s ease-in-out;
+  -o-transition: opacity 0.1s ease-in-out;
+  -ms-transition: opacity 0.1s ease-in-out;
+  transition: opacity 0.1s ease-in-out;
+}
+header aside a:hover {
+  opacity: 1;
+}
+section.outer {
+  position: relative;
+  margin: 0px 25px;
+  padding: 0px 10px 15px;
+  z-index: 1;
+}
+section.outer:before {
+  content: url(http://danebertram.com/img/bg-top-left.png);
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 2;
+}
+section.outer:after {
+  content: url(http://danebertram.com/img/bg-top-right.png);
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 2;
+}
+section.outer section {
+  background: none;
+  margin: 0;
+  padding: 5px 10px 0;
+}
+section.outer h1.major {
+  background: #efefef;
+  border-radius: 4px;
+  border-left: none;
+  border-right: none;
+  color: #666;
+  font-weight: bold;
+  padding: 5px;
+  text-transform: uppercase;
+  margin: 15px 0px 0px;
+}
+section.outer hgroup {
+  color: #666;
+  font-weight: bold;
+  line-height: 1.2em;
+  margin: 15px 0px;
+}
+aside {
+  color: #666;
+  float: right;
+  margin-top: 15px;
+}
+footer {
+  position: relative;
+  color: #ccc;
+  font-size: 0.8em;
+  line-height: 30px;
+  margin: 0px 35px;
+  text-align: left;
+  z-index: 1;
+  background-color: transparent;
+  background-image: url(http://danebertram.com/img/bg-bottom.png);
+  background-repeat: repeat-x;
+  background-position: 0 top;
+}
+footer:after {
+  content: url(http://danebertram.com/img/bg-bottom-right.png);
+  position: absolute;
+  right: -10px;
+  top: -104px;
+  z-index: 2;
+}
+footer:before {
+  content: url(http://danebertram.com/img/bg-bottom-left.png);
+  position: absolute;
+  left: -10px;
+  top: -104px;
+  z-index: 2;
+}
+footer nav {
+  float: right;
+  opacity: 0.5;
+}
+footer nav li {
+  display: inline;
+  margin-left: 5px;
+}

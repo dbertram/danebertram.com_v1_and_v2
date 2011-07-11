@@ -1,0 +1,478 @@
+body
+{
+	background-color: #fff;
+	margin: 3px 0px 3px 0px;
+	padding: 5px 0px 0px 5px;
+	text-align: center;
+	font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
+	font-size: smaller;
+}
+
+img { border: none; }
+
+#pageBody
+{
+	text-align: left;
+	width: 750px;
+	margin: auto;
+}
+
+
+/*
+ * Header & Navigation
+ */
+
+#pageHeader
+{
+	width: 750px;
+	height: 174px;
+	background-image: url(images/h-paris.jpg); /* default background header */
+	background-repeat: no-repeat;
+	background-position: center bottom;
+}
+
+#pageHeader ul
+{
+	float: right;
+	width: 644px;
+	list-style: none;
+	display: inline;
+	margin-top: 121px;
+	padding-top: 0px;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+	margin-left: 0px;
+	padding-left: 0px;
+	margin-right: 8px;
+	padding-right: 0px;
+}
+
+#pageHeader ul li
+{
+	border-top: 1px solid #000;
+	border-bottom:  1px solid #000;
+	float: right;
+	text-align: center;
+	width: 80px; /* width needed or else Opera goes nuts */
+	padding-top: 4px;
+	padding-bottom: 2px;
+	background-image:url(images/75p_white.png);
+}
+#pageHeader ul li.first { border-left: 1px solid #000; }
+#pageHeader ul li.eighth { border-right: 1px solid #000; }
+#pageHeader ul li.selected
+{
+	background-image: none;
+	background-color: #369;
+	border-left: 1px solid #000;
+	border-right: 1px solid #000;
+}
+#pageHeader ul li.selected a
+{
+	color: #fff;
+	font-weight: bold;
+}
+#pageHeader ul li.selected a:hover { color: #000; }
+
+#pageHeader a
+{
+	width: 80px;
+	color: #000;
+	text-align: center;
+	text-decoration: overline;
+}
+#pageHeader a:hover { font-weight: bold; }
+
+#pageHeader ul li.second a, #pageHeader ul li.fourth a, #pageHeader ul li.sixth a, #pageHeader ul li.eighth a {color: #888;}
+#pageHeader ul li.second a:hover, #pageHeader ul li.fourth a:hover, #pageHeader ul li.sixth a:hover, #pageHeader ul li.eighth a:hover {color: #000;}
+
+
+/*
+ *  Content
+ */
+
+#pageContent
+{
+	text-align: left;
+	padding-left: 30px;
+	padding-right: 36px;
+	padding-top: 10px;
+	padding-bottom: 8px;
+	background-image: url(images/shadow_middle.gif);
+	background-repeat: repeat-y;
+	background-position: center;
+}
+
+#pageContent .welcomeMsg
+{
+	border: thin dashed #aaa;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-bottom: 15px;
+	background-color: #ddd;
+	margin-bottom: 15px;
+}
+
+#pageContent .constructionSign
+{
+	text-align: center;
+	padding-top: 10px;
+}
+
+#sig
+{
+	text-align: center;
+	text-decoration: overline;
+}
+
+.warning {
+	color: #C66;
+	text-align: center;
+}
+
+
+/*
+ * Footer & Copyright
+ */
+
+#pageFooter
+{
+	color: #999;
+	height: 20px;
+	width: 714px;
+	padding-top: 15px;
+	padding-left: 15px;
+	padding-right: 21px;
+	background-image: url(images/shadow_bottom.gif);
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+
+#pageFooter #copyright
+{
+	float: left;
+	font-size: smaller;
+}
+
+#pageFooter #validators
+{
+	float: right;
+}
+
+#pageFooter a
+{
+	color: #999;
+	text-decoration: overline;
+}
+#pageFooter a:hover { color: #000; }
+
+#pageFooter #executeTime
+{
+	float: left;
+	padding-left: 10px;
+	font-size: smaller;
+}
+
+#pageFooter #executeTime a
+{
+	color: #fff;
+	cursor: default;
+	text-decoration: none;
+}
+#pageFooter #executeTime a:hover { color: #999; }
+
+#pageFooter #logoutLink
+{
+	float: right;
+	padding-right: 5px;
+}
+
+#pageFooter #logoutLink a
+{
+	text-decoration: none;
+	font-size: smaller;
+}
+
+/*
+ * Pictures
+ */
+#gallery a, #album a {
+	color: #999;
+	text-decoration: none;
+}
+#gallery a:hover, #album a:hover { color: #000; }
+
+#gallery .album {
+	margin-top: 15px;
+	border: 1px dashed #ccc;
+	padding: 10px;
+	clear: both;
+}
+
+#gallery .album h3 {
+	float: left;
+	margin-top: 2px;
+	margin-bottom: 12px;
+}
+
+#gallery .album .commands {
+	float: right;
+	margin-top: 3px;
+}
+
+#gallery .album .commands a {
+	background-color: #e1e1e1;
+	margin-left: 5px;
+	padding: 3px;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+#gallery .album .commands a:hover {
+	color: #fff;
+	background-color: #369;
+}
+
+#gallery .album table, #gallery .album table.details {
+	font-family: inherit;
+	font-size: 97%;
+	border-collapse: collapse;
+	border-top: 1px dashed #ccc;
+}
+
+#gallery .album table.details { border-top: 1px dotted #ccc; }
+#gallery .album table.details td {
+	border: 1px dotted #ccc;
+	color: #999;
+	padding: 2px;
+}
+
+#gallery .album a img.thumbnail {
+	border: 1px solid #ccc;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+#gallery .album a:hover img.thumbnail { border-color: #000; }
+
+#album h3 {
+	float: left;
+	margin-top: 2px;
+	margin-bottom: 12px;
+}
+
+#album .commands {
+	float: right;
+	margin-top: 3px;
+}
+
+#album .commands a {
+	background-color: #e1e1e1;
+	margin-left: 5px;
+	padding: 3px;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+#album .commands a:hover {
+	color: #fff;
+	background-color: #369;
+}
+
+#album .thumbnail {
+	float: left;
+	padding: 5px;
+	text-align: center;
+	width: 161px;
+}
+
+#album .thumbnail a img { border: 1px solid #ccc; }
+#album .thumbnail a:hover img { border: 1px solid #000; }
+
+
+
+/*
+ * Resume
+ */
+#resume ul { margin-top: 0; }
+
+#resume a
+{
+	color: #999;
+	text-decoration: none;
+}
+#resume a:hover { color: #000; }
+
+#resume h1
+{
+	margin-top: 0px;
+	margin-bottom: 5px;
+}
+
+#resume .heading
+{
+	border-bottom: 1px solid #bbbbbb;
+	border-top: 1px solid #bbbbbb;
+	font-weight: bold;
+	padding: 5px;
+	padding-left: 10px;
+	text-transform: uppercase;
+}
+
+#resume .gutter { width: 50px; }
+
+#resume ul.mainList
+{
+	margin-left: 0px;
+}
+
+#resume ul.mainList ul
+{
+	list-style-type: disc;
+}
+
+/*
+ * Portfolio
+ */
+.portfolio {
+ 	margin-bottom: 15px;
+ }
+.portfolio a {
+	color: #999;
+	text-decoration: none;
+}
+.portfolio a:hover { color: #000; }
+.portfolio h3 {
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+.portfolio img {
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+.portfolio .titleRow {
+	border-bottom: thin dashed #ccc;
+	padding-bottom: 5px;
+}
+.portfolio .infoRowL {
+	padding: 10px 5px 10px 10px;
+	border-left: thin dashed #ccc;
+}
+.portfolio .infoRowR {
+	padding: 10px 10px 10px 5px;
+	border-right: thin dashed #ccc;
+}
+.portfolio .footerRow {
+	border: thin dashed #ccc;
+	padding: 5px;
+	font-size: x-small;
+}
+
+
+/*
+ * Screenshots
+ */
+.screenshots {
+ 	margin-bottom: 15px;
+ }
+.screenshots a {
+	color: #999;
+	text-decoration: none;
+}
+.screenshots a:hover { color: #000; }
+.screenshots h3 {
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+.screenshots .screenshotSummary {
+	margin-top: 5px;
+	margin-bottom: 15px;
+	border: thin dashed #ccc;
+	padding: 5px;
+	text-align: center;
+}
+.screenshots .screenshotDesc {
+	font-size: x-small;
+	text-align: center;
+}
+
+
+/*
+ * Contact Form
+ */
+
+#contactForm form p
+{
+	padding: 0;
+	margin: 0;
+}
+
+#contactForm form label
+{
+	float: left;
+	width: 150px;
+	clear: left;
+	text-align: right;
+	padding-right: 10px;
+	font-weight: bold;
+}
+
+#contactForm form input, #contactForm form textarea
+{
+	color: #666;
+	width: 400px;
+	border: 1px solid #888;
+	border-bottom: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+	padding-left: 2px;
+	margin-bottom: 10px;
+	font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
+}
+
+#contactForm form input#submit, #contactForm form input#clear
+{
+	width: auto;
+	font-size: smaller;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	border: 1px solid #bbb;
+	border-bottom: 1px solid #888;
+	border-right: 1px solid #888;
+	background-color: #fff;
+}
+
+/*
+ * NiceTitles
+ */
+
+div.nicetitle {
+	position: absolute;
+	padding: 4px;
+	top: 0px;
+	left: 0px;
+	color: white;
+	font-size: 10px;
+	font-family: Tahoma, Verdana, Arial, sans-serif;
+	width: 25em;
+	font-weight: bold;
+	background: url(images/ntbg.png) !important;
+	background: none;
+}
+
+div.nicetitle p
+{
+	margin: 0;
+	padding: 0 3px;
+	color: #fff;
+	text-align: left;
+}
+
+div.nicetitle p.destination
+{
+	font-size: 9px;
+	font-weight: normal;
+	text-align: left;
+	padding:3px 4px;
+	color: #fff;
+	text-align: left;
+}
