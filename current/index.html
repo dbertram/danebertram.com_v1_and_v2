@@ -388,6 +388,26 @@
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
 		<script type="text/javascript">(function(w,d){if(w.location!=w.parent.location||w.location.search.indexOf('__preview_css__')>-1){var t=d.createElement('script');t.type='text/javascript';t.async=true;t.src='http://www.webputty.net/js/agtzfmNzc2ZpZGRsZXIMCxIEUGFnZRjyqwEM';(d.body||d.documentElement).appendChild(t);}})(window,document);</script>
 		<script type="text/javascript">
+			$(function(){
+				if (window.location.search.indexOf('__preview_css__') > -1) {
+					$('h1.major').click(function() {
+						if ($(this).hasClass('expanded')) {
+							$(this).siblings('section').slideUp(function() {
+								$(this).siblings('h1.major').removeClass('expanded');
+							});
+						} else {
+							$('h1.major.expanded ~ section').slideUp(function() {
+								$(this).siblings('h1.major').removeClass('expanded');
+							});
+							$(this).siblings('section').slideToggle(function() {
+								$(this).siblings('h1.major').addClass('expanded');
+							});
+						}
+					});
+				}
+			});
+		</script>
+		<script type="text/javascript">
 			var _gaq = _gaq || [];
 			_gaq.push(['_setAccount', 'UA-23925281-1']);
 			_gaq.push(['_trackPageview']);
