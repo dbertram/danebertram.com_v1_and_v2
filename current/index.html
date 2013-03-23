@@ -387,7 +387,8 @@
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
 		<script type="text/javascript">
 			$(function(){
-				if (window.location.search.indexOf('__preview_css__') > -1) {
+				if (window.location.search.indexOf('preview') > -1) {
+					$('body').addClass('preview');
 					$('h1.major').click(function() {
 						if ($(this).hasClass('expanded')) {
 							$(this).siblings('section').slideUp(function() {
