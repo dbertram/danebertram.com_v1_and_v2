@@ -135,6 +135,45 @@ section.outer h1.major {
   text-transform: uppercase;
   margin: 15px 0px 0px;
 }
+
+
+/* playing around with collapsible sections */
+body.preview section.outer h1.major {
+  position: relative;
+  cursor: pointer;
+  padding-left: 24px;
+}
+body.preview section.outer h1.major:before {
+  content: "";
+  border: 6px solid transparent;
+  border-left-color: #666;
+  height: 0;
+  width: 0;
+  position: absolute;
+  top: 6px;
+  left: 10px;
+}
+body.preview section.outer h1.major.expanded:before {
+  content: "";
+  border: 6px solid transparent;
+  border-top-color: #666;
+  height: 0;
+  width: 0;
+  position: absolute;
+  top: 10px;
+  left: 6px;
+}
+body.preview section.outer h1.major:hover {
+  background: #ddd;
+}
+body.preview section.outer h1.major ~ section {
+  display: none;
+}
+body.preview section.outer h1.major.expanded ~ section {
+  display: block;
+}
+
+
 section.outer hgroup {
   color: #666;
   font-weight: bold;
